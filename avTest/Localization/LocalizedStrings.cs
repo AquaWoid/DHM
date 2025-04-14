@@ -18,12 +18,16 @@ namespace avTest.Localization
             _localizationService.LanguageChanged += (sender, args) => this.RaisePropertyChanged(string.Empty);
         }
 
+
+
+        #region Localized Strings
         public string TestText => Language.TestText;
 
         public string LanguageText => Language.langText;
 
 
         public string WelcomeText => Language.textWelcome;
+        #endregion
 
     }
 }
